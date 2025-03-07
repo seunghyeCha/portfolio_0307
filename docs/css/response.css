@@ -1,0 +1,342 @@
+/* 작은 모바일 */
+@media (max-width: 500px) {
+    /* 전체 페이지 크기 지정 */
+    #page2, #hor, .port_text, .button {
+        max-width: 100%;
+    }
+    .port_box {
+        max-width: 90%;
+    }
+    /* 페이지 1*/
+    #head {
+        max-width: 450px;
+    }
+    #nav {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    #page1 h1 {
+        font-size: 2.3rem;
+    }
+    #page1 h3 {
+        font-size: 1.3rem;
+    }
+    #page1 p {
+        font-size: 0.8rem;
+    }
+    /*프로필 영역*/
+    #bg_page2 {
+        height: max-content;
+    }
+    #page2 {
+        padding: 0 7% 80px;
+    }
+    #page2 > h2 {
+        padding-top: 100px;
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+    #pro_wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    #pro_wrap p {
+        letter-spacing: 0.5px;
+    }
+    #pro_wrap > img {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    #text_wrap {
+        display: block;
+    }
+    #text_wrap h3 {
+        text-align: center;
+    }
+    #text_wrap li {
+        line-height: 30px;
+    }
+    #text_wrap div {
+        padding-bottom: 80px;
+    }
+
+    /*포트폴리오 영역*/
+    #hor {
+        position: relative;
+        display: block;
+        height: max-content;
+        margin: 150px auto;
+    }
+    .port_box {
+        display: block;
+        height: max-content;
+        margin: inherit;
+        padding: 0;
+    }
+    .port_box img {
+        width: 100%;
+        margin: 40px 0 0;
+    }
+    .port_text {
+        height: 280px;
+        width: 100%;
+    }
+    .port_text  p {
+        font-size: 14px;
+        max-width: 100%;
+        letter-spacing: -0.5px;
+    }
+    .port_text > h2 {
+        font-size: 20px;
+        margin-bottom: 30px
+    }
+    .port_text > h2::after {
+        max-width: 100%;
+    }
+    .button > a {
+        width: 48%;
+        height: 40px;
+        line-height: 45px;
+        font-size: 12px;
+    }
+    /* 푸터영역 */
+    #foo_wrap {
+        max-width: 400px;
+        display: block;
+        padding: 200px 0;
+        box-sizing: border-box;
+    }
+    #left {
+        font-size: 13px;
+        padding-bottom: 40px;
+    }
+    #left > h2 {
+        font-size: 35px;
+        font-weight: 800;
+    }
+    #right {
+        font-size: 12px;
+    }
+
+    #bottom {
+        font-size: 10px;
+        padding: 15px 0;
+    }
+}
+
+/* 태블릿 */
+@media (min-width: 501px) and (max-width: 1000px) {
+    /* 전체 페이지 크기 지정 */
+    #page2, #hor, .port_box, .port_text, .button {
+        max-width: 100%;
+    }
+    /* 헤더 */
+    #head {
+        max-width: 900px;
+        justify-content: space-between;
+    }
+    #nav {
+        display: block;
+    }
+    #hamburger {
+        display: none;
+    }
+    /* 메인페이지 */
+    #page1 h1 {
+        font-size: 3.8rem;
+    }
+    #page1 h3 {
+        font-size: 1.6rem;
+    }
+    #page1 p {
+        font-size: 1rem;
+    }
+    /* 페이지-프로필 */
+    #bg_page2 {
+        padding: 100px 0;
+        height: max-content;
+    }
+    #page2 {
+        padding: 0 7%;
+    }
+    #page2 h2 {
+        font-size: 43px;
+        margin-bottom: 40px;
+    }
+    #pro_wrap {
+        font-size: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    #pro_wrap > img {
+        width: 300px;
+    }
+    #text_wrap {
+        grid-template-columns: 380px 430px;
+        gap: 40px 20px;
+    }
+
+    /* 포폴작업 */
+    #hor {
+        display: block;
+        width: 100vw;
+        height: max-content;
+        position:relative;
+        box-sizing: border-box;
+    }
+    .port_box {
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 40px 0;
+        padding: 100px 10% ;
+        box-sizing: border-box;
+    }
+    .port_box img {
+        max-width: 100%;
+    }
+    .port_text {
+        font-size: 1rem;
+        width: 100%;
+        height: 300px;
+    }
+    .port_text > p {
+        margin: 20px 0;
+    }
+    .port_text > h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    .button {
+        justify-content: flex-end;
+        gap: 15px;
+        right: 0;
+        bottom: 0;    
+    }
+    .button > a {
+        font-size: 0.9rem;
+        width : 200px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /* 푸터 */
+    #footer {
+        padding: 0 10%;
+        box-sizing: border-box;
+        font-size: 0.8rem;
+    }
+    #foo_wrap {
+        max-width: 100%;
+        height: 300px;
+        margin-top : 120px;
+        padding: 200px 0;
+        align-items: flex-end;
+    }
+    #left >h2 {
+        font-size: 45px;
+    }
+    #left > p {
+        letter-spacing: -0.2px;
+        line-height: 1.8;
+    }
+    #right {
+        width: 300px;
+        line-height: 1.8;
+    }
+    #right span {
+        width: 70px;
+    }
+}
+
+/* 노트북 */
+@media (min-width: 1001px) and (max-width: 1700px) {
+    #page2, .port_text, .button {
+        max-width: 100%;
+    }
+    .port_box {
+        max-width: 90%;
+    }
+    /* 헤드 */
+    #head {
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+    #nav {
+        display: block;
+    }
+    #hamburger {
+        display: none;
+    }
+    /* 메인페이지 */
+    #page1 {
+        padding-top: 200px;
+    }
+    #page1 > h3 {
+        font-size: 1.6rem;
+    }
+    #page1 > p {
+        font-size: 1.1rem;
+    }
+    /* 프로필 */
+    #bg_page2 {
+        max-width: 100%;
+        height: max-content;
+        font-size: 1rem;
+    }
+    #page2 {
+        padding: 130px 7% 100px ;
+    }
+    #page2 > h2 {
+        font-size: 48px;
+    }
+
+    #pro_wrap {
+        gap: 3%
+    }
+    #pro_wrap > img {
+        width: 370px;
+    }
+    #text_wrap {
+        grid-template-columns: 380px 430px;
+        gap: 30px 60px;
+    }
+
+    /* 포폴작업물 */
+    .port_box {
+        padding: 0 3%;
+        gap: 2%;
+    }
+    .port_box > img {
+        width: 800px;
+    }
+    .port_text {
+        font-size: 1.1rem;
+        max-width: 480px;
+    }
+    .port_text > h2 {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .explain {
+        letter-spacing: -0.8px;
+    }
+    .button > a {
+        width: 49%;
+        font-size: 1.1rem;
+    }
+    /* 푸터 */
+
+    #foo_wrap {
+        height: 500px ;
+        max-width: 90%;
+        margin: 0px auto;
+        align-items: flex-end;
+    }
+    #right {
+        width: 350px;
+    }
+}
